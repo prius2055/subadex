@@ -8,7 +8,7 @@ import Mojeed from "../img/mojeed.jpg";
 import Tenny from "../img/tenny.jpg";
 import IT from "../img/IT.jpg";
 
-import "./Homepage.css";
+import "./Homepage2.css";
 
 const Homepage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,7 +43,7 @@ const Homepage = () => {
     {
       icon: "🚀",
       title: "WE'RE FAST",
-      desc: "VTVend lets you purchase mobile data, top up airtime, pay your cable and electricity bills e.t.c all at the speed of light.",
+      desc: "Subadex lets you purchase mobile data, top up airtime, pay your cable and electricity bills e.t.c all at the speed of light.",
     },
     {
       icon: "🛡️",
@@ -76,7 +76,7 @@ const Homepage = () => {
     {
       icon: "📱",
       title: "AIRTIME TOPUP",
-      desc: "Making an online recharge has become very easy and safe on VTVend.",
+      desc: "Making an online recharge has become very easy and safe on Subadex.",
     },
     {
       icon: "💵",
@@ -108,7 +108,7 @@ const Homepage = () => {
       name: "I.T-Guy",
       role: "UI / UX Designer",
       avatar: IT,
-      text: '"This site is great... All thanks to VTVend.com. I can really say that since I joined this site I have been earning more than before..."',
+      text: '"This site is great... All thanks to Subadex.com. I can really say that since I joined this site I have been earning more than before..."',
     },
     {
       name: "Tenny",
@@ -152,7 +152,7 @@ const Homepage = () => {
       {/* Navigation */}
       <nav className="nav gradient-bg">
         <div className="nav-container">
-          <div className="logo">VTvend</div>
+          <div className="logo">Subadex</div>
 
           {/* Desktop Nav */}
           <ul className="nav-links desktop-only">
@@ -218,9 +218,9 @@ const Homepage = () => {
       <section id="home" className="hero gradient-bg">
         <div className="hero-container">
           <div className="hero-text">
-            <h1>WELCOME TO VTVend</h1>
+            <h1>WELCOME TO Subadex</h1>
             <p>
-              VTVend is a company of VTVend Nigeria Limited. We offer best deals
+              At Subadex, We offer best deals
               when it comes to internet Data Plans, Airtime, Bills payment like
               GOTV, DSTV & STARTIMES.
             </p>
@@ -236,21 +236,7 @@ const Homepage = () => {
 
           <img src={MobilePhone} alt="A mobile phone" className="hero-image" />
         </div>
-        <svg className="hero-wave" viewBox="0 0 1440 320">
-          <path
-            fill="#ffffff"
-            fillOpacity="1"
-            d="
-          M0,160
-          C90,80  180,240  270,160
-          C360,80  450,240  540,160
-          C630,80  720,240  810,160
-          C900,80  990,240 1080,160
-          C1170,80 1260,240 1350,160
-          C1400,120 1440,140 1440,160
-          V320 H0 Z"
-          />
-        </svg>
+       
       </section>
 
       {/* About Section */}
@@ -261,7 +247,7 @@ const Homepage = () => {
           <div className="title-underline small"></div>
         </div>
         <p className="section-description">
-          VTVend is a registered telecommunication vendor known for providing
+          Subadex is a registered telecommunication vendor known for providing
           internet services, airtime VTU, cable TV subscriptions, electricity
           payment, converting airtime to cash, bitcoin buying and selling, and
           selling of UK used phones at affordable prices.
@@ -271,7 +257,7 @@ const Homepage = () => {
             <h3>RELIABLE TELECOMMUNICATION COMPANY</h3>
             <div className="content-underline"></div>
             <p>
-              VTVend also gives people the opportunity of becoming their
+              Subadex also gives people the opportunity of becoming their
               reseller and be making money on hourly and daily basis so as to
               boost their financial status.
             </p>
@@ -332,7 +318,7 @@ const Homepage = () => {
           <div className="title-underline big"></div>
           <div className="title-underline small"></div>
           <p className="section-description">
-            Here at VTVend our services are completely Fast, Secure & Automated.
+            Here at Subadex our services are completely Fast, Secure & Automated.
             We provide 24/7 Support to our registered users.
           </p>
         </div>
@@ -597,8 +583,8 @@ const Homepage = () => {
           <div className="title-underline big"></div>
           <div className="title-underline small"></div>
           <p>
-            Download VTVend Android app, compatible with all devices. Search for
-            VTVend on playstore or click on the button below to download the app
+            Download Subadex Android app, compatible with all devices. Search for
+            Subadex on playstore or click on the button below to download the app
             on Playstore. Will soon be available on App Store.
           </p>
           <button className="download-btn">available on PLAY STORE</button>
@@ -624,7 +610,7 @@ const Homepage = () => {
           <div className="contact-card">
             <div className="contact-icon">✉️</div>
             <h3>E-mail Address:</h3>
-            <p>info@vtvend.com</p>
+            <p>info@Subadex.com</p>
           </div>
           <div className="contact-card">
             <div className="contact-icon">📞</div>
@@ -638,9 +624,9 @@ const Homepage = () => {
       <footer className="footer">
         <div className="footer-grid">
           <div className="footer-section">
-            <h3>VTVend</h3>
+            <h3>Subadex</h3>
             <p>
-              VTVend is a company of VTVend Nigeria Limited. We offer best deals
+              Subadex is a company of Subadex Nigeria Limited. We offer best deals
               when it comes to internet Data Plans, Airtime, Bills payment like
               GOTV, DSTV & STARTIMES.
             </p>
@@ -673,7 +659,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>VTVend Copyright © 2025 All Rights Reserved</p>
+          <p>Subadex Copyright © 2025 All Rights Reserved</p>
         </div>
       </footer>
     </div>
