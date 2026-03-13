@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { MessageCircle } from "lucide-react";
-import { useAuth } from "./authContext";
-import { useWallet } from "./walletContext";
-import SideBar from "./SideBar";
-import Header from "./Header";
-import UpgradeModal from "./UpgradeModal";
-import ServiceTable from "./ServiceTable";
+import { useAuth } from "../components/authContext";
+import { useWallet } from "../components/walletContext";
+import SideBar from "../components/SideBar";
+import Header from "../components/Header";
+import UpgradeModal from "../components/UpgradeModal";
+import ServiceTable from "../components/ServiceTable";
 
-import "./Dashboard2.css";
+import "./Dashboard.css";
 
 const Dashboard = () => {
   const [showUpgradeModal, setShowUpgradeModal] = useState(false);

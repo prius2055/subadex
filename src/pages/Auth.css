@@ -44,7 +44,7 @@ auth.css * {
   text-align: center;
   font-size: 1.75rem;
   font-weight: 800;
-  color: #2563eb;
+  color: #1A3A2A;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
 }
@@ -189,7 +189,7 @@ auth.css * {
   width: 36px;
   height: 36px;
   border: 3px solid #e2e8f0;
-  border-top-color: #2563eb;
+  border-top-color: #1A3A2A;
   border-radius: 50%;
   animation: spin 0.7s linear infinite;
 }
@@ -241,7 +241,7 @@ auth.css * {
   width: 18px;
   height: 18px;
   cursor: pointer;
-  accent-color: #2563eb;
+  accent-color: #1A3A2A;
 }
 
 .checkbox-label span {
@@ -250,7 +250,7 @@ auth.css * {
 }
 
 .terms-link {
-  color: #2563eb;
+  color: #1A3A2A;
   text-decoration: none;
   font-weight: 500;
 }
@@ -267,7 +267,7 @@ auth.css * {
 }
 
 .forgot-link {
-  color: #2563eb;
+  color: #1A3A2A;
   font-size: 0.875rem;
   text-decoration: none;
   font-weight: 500;
@@ -281,7 +281,7 @@ auth.css * {
 
 .btn-submit {
   padding: 0.75rem 2rem;
-  background: #2563eb;
+  background: #1A3A2A;
   color: white;
   border: none;
   border-radius: 8px;
@@ -317,7 +317,7 @@ auth.css * {
 }
 
 .auth-switch a {
-  color: #2563eb;
+  color: #1A3A2A;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
@@ -377,7 +377,7 @@ auth.css * {
 .forgot-link:focus-visible,
 .auth-switch a:focus-visible,
 .terms-link:focus-visible {
-  outline: 2px solid #2563eb;
+  outline: 2px solid #1A3A2A;;
   outline-offset: 2px;
   border-radius: 4px;
 }

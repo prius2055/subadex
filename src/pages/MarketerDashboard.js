@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { MessageCircle, LogOut } from "lucide-react";
-import { useAuth } from "./authContext";
+import { useAuth } from "../components/authContext";
 import { BASE_URL, getHeaders } from "../api/api";
-import SideBar from "./SideBar";
+import SideBar from "../components/SideBar";
 
 import "./MarketerDashboard2.css";
 

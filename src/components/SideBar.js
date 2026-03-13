@@ -20,7 +20,7 @@ import { useMenu } from "./MenuContext";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { formatCurrency } from "../utils/helperFunctions";
 
-import "./Dashboard2.css";
+import "./../pages/Dashboard.css";
 
 const SideBar = ({ marketerWalletBalance }) => {
   const { user } = useAuth();

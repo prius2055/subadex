@@ -1,8 +1,8 @@
 import React, { useState, useMemo, useEffect } from "react";
-import { useWallet } from "./walletContext";
+import { useWallet } from "../components/walletContext";
 import { useNavigate } from "react-router-dom";
-import SideBar from "./SideBar";
-import Header from "./Header";
+import SideBar from "../components/SideBar";
+import Header from "../components/Header";
 import "./BuyData.css";
 
 const BuyData = () => {

@@ -1,7 +1,8 @@
 import React from "react";
 import { useAuth } from "./authContext";
 import { useMenu } from "./MenuContext";
-import "./Dashboard2.css";
+
+import "./../pages/Dashboard.css";
 
 const Header = () => {
   const { logout, loggingOut } = useAuth();
