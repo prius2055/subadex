@@ -5,7 +5,8 @@ import { useAuth } from "../components/authContext";
 import { BASE_URL, getHeaders } from "../api/api";
 import SideBar from "../components/SideBar";
 
-import "./MarketerDashboard2.css";
+import "./MarketerDashboard.css";
+import Header from "../components/Header";
 
 /* ─── Stat Card ─── */
 const StatCard = ({ icon, title, value, sub, color, delay }) => (
@@ -446,6 +447,7 @@ const MarketerDashboard = () => {
       <SideBar marketerWalletBalance={stats?.totalBalance} />
 
       <div className="main-content">
+        <Header />
         <div className="content md-content">
           {/* ── Success Banner ── */}
           {successMessage && (

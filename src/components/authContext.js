@@ -4,9 +4,6 @@ import { BASE_URL, getHeaders } from "../api/api";
 
 const AuthContext = createContext();
 
-// const BASE_URL = `http://localhost:5000/api/v1`;
-
-// const BASE_URL = `https://vtu-backend-wjn6.onrender.com/api/v1`;
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -189,9 +186,11 @@ export const AuthProvider = ({ children }) => {
       try {
         localStorage.removeItem("token");
         setUser(null);
+        setLoggingOut(false); // ✅ reset before navigating
         console.log("✅ Logout successful");
       } catch (error) {
         console.error("❌ Logout error:", error);
+        setLoggingOut(false); // ✅ reset before navigating
       } finally {
         navigate("/", { replace: true });
       }

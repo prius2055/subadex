@@ -1,6 +1,9 @@
 import React from "react";
 import { useAuth } from "./authContext";
 import { useMenu } from "./MenuContext";
+import { Link } from "react-router";
+
+import Logo from "../img/logo.png";
 
 import "./../pages/Dashboard.css";
 
@@ -10,6 +13,10 @@ const Header = () => {
 
   const onMobileMenu = () => {
     toggleMobileMenu();
+  };
+
+  const closeMobileMenu = () => {
+    if (mobileMenu) toggleMobileMenu();
   };
 
   if (loggingOut) {
@@ -34,9 +41,21 @@ const Header = () => {
         {!mobileMenu ? "☰" : ""}
       </div>
 
-      <button className="logout-btn" onClick={logout}>
+      <Link to="/">
+        <img src={Logo} alt="Subadex Logo" className="logo" />
+      </Link>
+
+      {/* <div
+        className="mobile-menu-toggle"
+        onClick={closeMobileMenu}
+        aria-label="Close menu"
+      >
+        ✕
+      </div> */}
+
+      {/* <button className="logout-btn" onClick={logout}>
         Logout
-      </button>
+      </button> */}
     </div>
   );
 };

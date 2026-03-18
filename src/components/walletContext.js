@@ -67,7 +67,7 @@ export const WalletProvider = ({ children }) => {
   }, [token]);
 
   const fetchDataPlans = useCallback(async () => {
-    console.log("🔵 Fetching from:", `${BASE_URL}/vtu/data-plans`); // ← add this
+   
     setLoading(true);
     setError(null);
     try {
@@ -77,7 +77,6 @@ export const WalletProvider = ({ children }) => {
       });
       const data = await response.json();
 
-      // console.log("api result", data);
 
       if (data.status === "success") {
         setLoading(false);

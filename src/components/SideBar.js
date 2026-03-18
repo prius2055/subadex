@@ -10,9 +10,10 @@ import {
   Settings,
   Code,
   Monitor,
+  LogOut,
   MonitorCog,
-  ArrowRightLeft,
   Signal,
+  ArrowRightLeft,
 } from "lucide-react";
 import { useWallet } from "./walletContext";
 import { useAuth } from "./authContext";
@@ -23,7 +24,7 @@ import { formatCurrency } from "../utils/helperFunctions";
 import "./../pages/Dashboard.css";
 
 const SideBar = ({ marketerWalletBalance }) => {
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
   const { balance: userWalletBalance } = useWallet();
   const { mobileMenu, toggleMobileMenu } = useMenu();
 
@@ -47,12 +48,6 @@ const SideBar = ({ marketerWalletBalance }) => {
   return (
     <div className={`sidebar ${mobileMenu ? "open" : ""}`}>
       <div className="sidebar-header">
-        <h2>
-          <Link to="/" className="home-btn">
-            Home
-          </Link>
-        </h2>
-
         <div
           className="mobile-menu-toggle"
           onClick={closeMobileMenu}
@@ -119,21 +114,23 @@ const SideBar = ({ marketerWalletBalance }) => {
           <UserPlus size={20} />
           <span>Account</span>
         </div>
-        <div className="nav-item">
-          <Settings size={20} />
-          <span>Change Pin</span>
-        </div>
 
         {safeRole !== "marketer" && (
           <div className="nav-item">
             <Settings size={20} />
-            <span>Setting</span>
+            <span>Settings</span>
+          </div>
+        )}
+        {safeRole === "marketer" && (
+          <div className="nav-item">
+            <Code size={20} />
+            <span>Developer's API</span>
           </div>
         )}
 
-        <div className="nav-item">
-          <Code size={20} />
-          <span>Developer's API</span>
+        <div className="nav-item" onClick={logout}>
+          <LogOut size={20} />
+          Logout
         </div>
 
         {safeRole === "marketer" && (

@@ -210,19 +210,6 @@ const Dashboard = () => {
           {user.role === "user" && (
             <div className="dashboard-hero">
               <div className="hero-content">
-                {/* Badge */}
-                <div className="hero-badge">
-                  <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                    />
-                  </svg>
-                  <span>Limited Time Offer</span>
-                </div>
-
                 {/* Heading */}
                 <h1 className="hero-title">
                   Ready to
@@ -357,20 +344,10 @@ const Dashboard = () => {
             ))}
           </div>
           <div className="info-cards-row">
-            <div
-              className="info-card"
-              style={{
-                background: "linear-gradient(135deg, #3b9fd8 0%, #2980b9 100%)",
-              }}
-            >
+            <div className="info-card">
               <h3>Notifications</h3>
             </div>
-            <div
-              className="info-card"
-              style={{
-                background: "linear-gradient(135deg, #3b9fd8 0%, #2980b9 100%)",
-              }}
-            >
+            <div className="info-card">
               <h3>FAQs:</h3>
               <p>
                 Please go through them to have a better knowledge of this
@@ -378,12 +355,7 @@ const Dashboard = () => {
               </p>
               <button className="info-card-btn">❓ FAQs</button>
             </div>
-            <div
-              className="info-card"
-              style={{
-                background: "linear-gradient(135deg, #3b9fd8 0%, #2980b9 100%)",
-              }}
-            >
+            <div className="info-card">
               <h3>Support Team:</h3>
               <p>
                 Have anything to say to us? Please contact our Support Team on

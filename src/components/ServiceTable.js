@@ -2,7 +2,7 @@ import React from "react";
 import { Pencil } from "lucide-react";
 import { useNavigate, useLocation } from "react-router";
 
-import "./ServiceTable.css";
+import "./ServiceTable2.css";
 
 const ServiceTable = ({ dataPlans, role, loading }) => {
   const isMarketer = role === "marketer";

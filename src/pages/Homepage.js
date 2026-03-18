@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router";
 import { useWallet } from "../components/walletContext";
 
+import Logo from "../img/logo.png";
 import MobilePhone from "../img/mobile_phone.png";
 import AboutPhone from "../img/about.png";
 import Mojeed from "../img/mojeed.jpg";
 import Tenny from "../img/tenny.jpg";
 import IT from "../img/IT.jpg";
 
-import "./Homepage2.css";
+import "./Homepage.css";
 
 const Homepage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -152,7 +153,9 @@ const Homepage = () => {
       {/* Navigation */}
       <nav className="nav gradient-bg">
         <div className="nav-container">
-          <div className="logo">Subadex</div>
+          <Link to="/">
+            <img src={Logo} alt="Subadex Logo" className="logo" />
+          </Link>
 
           {/* Desktop Nav */}
           <ul className="nav-links desktop-only">
@@ -366,7 +369,7 @@ const Homepage = () => {
       </section>
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">OUR AWSOME SERVICES</h2>
+          <h2 className="section-title">OUR AWESOME SERVICES</h2>
           <div className="title-underline big"></div>
           <div className="title-underline small"></div>
           <p className="section-description">We Provide The Best Services.</p>
@@ -655,7 +658,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>Subadex Copyright © 2026 All Rights Reserved</p>
+          <p>Subadex by Prius2055 Copyright © 2026 All Rights Reserved</p>
         </div>
       </footer>
     </div>
