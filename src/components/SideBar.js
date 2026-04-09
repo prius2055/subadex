@@ -15,9 +15,9 @@ import {
   Signal,
   ArrowRightLeft,
 } from "lucide-react";
-import { useWallet } from "./walletContext";
-import { useAuth } from "./authContext";
-import { useMenu } from "./MenuContext";
+import { useWallet } from "../context/walletContext";
+import { useAuth } from "../context/authContext";
+import { useMenu } from "../context/MenuContext";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { formatCurrency } from "../utils/helperFunctions";
 

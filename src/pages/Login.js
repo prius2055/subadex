@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router";
 import { Eye, EyeOff } from "lucide-react";
-import { useAuth } from "../components/authContext";
+import { useAuth } from "../context/authContext";
 
 import "./Auth.css";
 

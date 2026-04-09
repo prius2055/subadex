@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { MessageCircle, LogOut } from "lucide-react";
-import { useAuth } from "../components/authContext";
+import { useAuth } from "../context/authContext";
 import { BASE_URL, getHeaders } from "../api/api";
 import SideBar from "../components/SideBar";
 
-import "./MarketerDashboard.css";
+import "./MarketerDashboard2.css";
 import Header from "../components/Header";
 
 /* ─── Stat Card ─── */

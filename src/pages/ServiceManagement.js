@@ -3,8 +3,8 @@ import SideBar from "../components/SideBar";
 import Header from "../components/Header";
 import ServiceTable from "../components/ServiceTable";
 import { useNavigate } from "react-router";
-import { useWallet } from "../components/walletContext";
-import { useAuth } from "../components/authContext";
+import { useWallet } from "../context/walletContext";
+import { useAuth } from "../context/authContext";
 
 import "./ServiceManagement.css";
 

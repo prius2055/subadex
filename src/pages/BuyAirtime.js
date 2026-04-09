@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useWallet } from "../components/walletContext";
+import { useWallet } from "../context/walletContext";
 import { useNavigate } from "react-router-dom";
 import SideBar from "../components/SideBar";
 import Header from "../components/Header";

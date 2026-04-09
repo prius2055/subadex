@@ -1,4 +1,4 @@
-import { useAuth } from "./authContext";
+import { useAuth } from "../context/authContext";
 import { Navigate } from "react-router";
 
 const MarketerRoutes = ({ children }) => {

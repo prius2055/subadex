@@ -1,6 +1,6 @@
 import React from "react";
-import { useAuth } from "./authContext";
-import { useMenu } from "./MenuContext";
+import { useAuth } from "../context/authContext";
+import { useMenu } from "../context/MenuContext";
 import { Link } from "react-router";
 
 import Logo from "../img/logo.png";

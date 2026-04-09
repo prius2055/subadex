@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SideBar from "../components/SideBar";
 import Header from "../components/Header";
-import { useWallet } from "../components/walletContext";
+import { useWallet } from "../context/walletContext";
 
 import "./BuyData.css";
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router";
-import { useWallet } from "../components/walletContext";
+import { useWallet } from "../context/walletContext";
 
 import Logo from "../img/logo.png";
 import MobilePhone from "../img/mobile_phone.png";

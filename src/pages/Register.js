@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useAuth } from "../components/authContext";
+import { useAuth } from "../context/authContext";
 import { Eye, EyeOff } from "lucide-react";
 
 import "./Auth.css";
